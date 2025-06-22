@@ -9,7 +9,6 @@ export default function Detail() {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const text = e.target.value;
-    console.log(text);
     setSearch(text);
   };
   return (

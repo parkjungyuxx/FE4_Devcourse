@@ -148,7 +148,7 @@ export default function Home() {
         <Swiper spaceBetween={0} slidesPerView={5} className="movie-list">
           {nowPlaying.map((movie) => (
             <SwiperSlide className="movie-list__item" key={movie.id}>
-              <Link href="#">
+              <Link href={`/detail/${movie.id}`}>
                 <figure>
                   <Image
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
@@ -250,7 +250,7 @@ export default function Home() {
         <Swiper spaceBetween={0} slidesPerView={5} className="movie-list">
           {popular.map((movie) => (
             <SwiperSlide className="movie-list__item" key={movie.id}>
-              <Link href="#">
+              <Link href={`/detail/${movie.id}`}>
                 <figure>
                   <Image
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
@@ -283,7 +283,7 @@ export default function Home() {
         <Swiper spaceBetween={0} slidesPerView={5} className="movie-list">
           {upComing.map((movie) => (
             <SwiperSlide className="movie-list__item" key={movie.id}>
-              <Link href="#">
+              <Link href={`/detail/${movie.id}`}>
                 <figure>
                   <Image
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
@@ -316,7 +316,7 @@ export default function Home() {
         <Swiper spaceBetween={0} slidesPerView={5} className="movie-list">
           {topRated.map((movie) => (
             <SwiperSlide className="movie-list__item" key={movie.id}>
-              <Link href="#">
+              <Link href={`/detail/${movie.id}`}>
                 <figure>
                   <Image
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
