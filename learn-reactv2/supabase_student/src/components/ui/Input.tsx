@@ -34,6 +34,7 @@ export default function Input({
           </div>
         )}
         <input
+        
           id={id}
           className={`
             block ${fullWidth ? "w-full" : "w-auto"} px-4 py-2 
